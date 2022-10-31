@@ -1,0 +1,1036 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="valorantanalysis">
+        <div class="container">
+            <div>
+                <h1>VALORANT ANALYSIS</h1>
+                <p>Use our website to analyse the game and improve your gameplay.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <h2>AGENT BREAKDOWN</h2>
+                <p>Pick an agent to find out more about them.</p>
+            </div>
+            <div class="row text-center justify-content-center" style="color: black">
+                <div class="col-2 p-0">
+                    <div data-selector="agents" class="selector-box" style="background-color: #CA34AF;">Astra</div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="agents" class="selector-box" style="background-color: #FF824C;">Breach</div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="agents" class="selector-box" style="background-color: #FF5900;">Brimstone</div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="agents" class="selector-box" style="background-color: #B8BAB9;">Cypher</div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="agents" class="selector-box" style="background-color: #75D2E0;">Jett</div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="agents" class="selector-box" style="background-color: #F8DD30;">Killjoy</div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="agents" class="selector-box" style="background-color: #AAA8F4;">Omen</div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="agents" class="selector-box" style="background-color: #F6A056;">Phoenix</div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="agents" class="selector-box" style="background-color: #FF5E34;">Raze</div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="agents" class="selector-box" style="background-color: #CE53AF;">Reyna</div>
+                </div>
+                <div class="col-2 p-0">
+                    <div id="agent0" data-selector="agents" class="selector-box" style="background-color: #3BDFC3;">Sage
+                    </div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="agents" class="selector-box" style="background-color: #7EDDB9;">Skye</div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="agents" class="selector-box" style="background-color: #F4DBC1;">Sova</div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="agents" class="selector-box" style="background-color: #00C946;">Viper</div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="agents" class="selector-box" style="background-color: #3B80EF;">Yoru</div>
+                </div>
+            </div>
+            <div class="row p-2"></div>
+            <div class="row align-items-center">
+                <div class="col-3">
+                    <img class="img-fluid" id="coverimage" src="agent_pictures/Sage_artwork.png" />
+                    <h3 style="font-weight: 800; transition: 0.2s;" id="agentname"
+                        class="text-center agent-coloredtext">
+                        Sage</h3>
+                </div>
+                <div class="col-9">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <img class="img-fluid" id="pickrate" src="pickrates/Sagepickrate.png" />
+                                <div>
+                                    <p class="d-inline-block m-0 float-left text-muted">Iron pickrate</p>
+                                    <p class="d-inline-block m-0 float-right text-muted">Immortal+ pickrate</p>
+                                </div>
+                            </div>
+                            <div class="col-auto" style="width: 200px; text-align: center;">
+                                <p id="pickratePercent" class="agent-coloredtext">80%</p>
+                                <p>average pick rate</p>
+                            </div>
+                        </div>
+                        <div class="row p-2"></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h2><span style="font-weight:800; font-size: 22px;">ABILITY CASTS PER ROUND</span></h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col p-0">
+                                <div data-selector="abilityrank" class="selector-box slim"
+                                    style="background-color: #555658;">
+                                    Iron</div>
+                            </div>
+                            <div class="col p-0">
+                                <div data-selector="abilityrank" class="selector-box slim"
+                                    style="background-color: #9E6C16;">
+                                    Bronze</div>
+                            </div>
+                            <div class="col p-0">
+                                <div id="rank0" data-selector="abilityrank" class="selector-box slim"
+                                    style="background-color: #CDD0D0;">Silver</div>
+                            </div>
+                            <div class="col p-0">
+                                <div data-selector="abilityrank" class="selector-box slim"
+                                    style="background-color: #E8B210;">
+                                    Gold</div>
+                            </div>
+                            <div class="col p-0">
+                                <div data-selector="abilityrank" class="selector-box slim"
+                                    style="background-color: #39A8BA;">
+                                    Platinum</div>
+                            </div>
+                            <div class="col p-0">
+                                <div data-selector="abilityrank" class="selector-box slim"
+                                    style="background-color: #A06FEC;">
+                                    Diamond+</div>
+                            </div>
+                        </div>
+                        <div class="row p-1"></div>
+                        <div class="row align-items-center">
+                            <div class="col-1 p-0 p-sm-1 p-lg-2"><img class="img-fluid" id="abilityC"
+                                    src="abilityimgs/Sagec.png" /></div>
+                            <div class="col-9 barcontainer">
+                                <div id="barC" class="bar agent-coloredbg"></div>
+                            </div>
+                            <div class="col-2" id="castsC">1.32</div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-1 p-0 p-sm-1 p-lg-2"><img class="img-fluid" id="abilityQ"
+                                    src="abilityimgs/Sageq.png" /></div>
+                            <div class="col-9 barcontainer">
+                                <div id="barQ" class="bar agent-coloredbg"></div>
+                            </div>
+                            <div class="col-2" id="castsQ">1.32</div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-1 p-0 p-sm-1 p-lg-2"><img class="img-fluid" id="abilityE"
+                                    src="abilityimgs/Sagee.png" /></div>
+                            <div class="col-9 barcontainer">
+                                <div id="barE" class="bar agent-coloredbg"></div>
+                            </div>
+                            <div class="col-2" id="castsE">1.32</div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-1 p-0 p-sm-1 p-lg-2"><img class="img-fluid" id="abilityX"
+                                    src="abilityimgs/Sagex.png" /></div>
+                            <div class="col-9 barcontainer">
+                                <div id="barX" class="bar agent-coloredbg"></div>
+                            </div>
+                            <div class="col-2" id="castsX">1.32</div>
+                        </div>
+                        <div class="row p-1"></div>
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <h2><span style="font-weight:800; font-size: 22px;">BEST PAIRINGS</span></h2>
+                                <div class="container-fluid">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto"><img id="besticon0" src="agenticons/Astra_icon.png"
+                                                style="max-width: 40px;" class="img-fluid" /></div>
+                                        <div class="col"><span id="best0" class="font-weight-bold">Astra</span><span
+                                                class="small"> (<span id="best0p">47</span>% win)</span></div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto"><img id="besticon1" src="agenticons/Astra_icon.png"
+                                                style="max-width: 40px;" class="img-fluid" /></div>
+                                        <div class="col"><span id="best1" class="font-weight-bold">Astra</span><span
+                                                class="small"> (<span id="best1p">47</span>% win)</span></div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto"><img id="besticon2" src="agenticons/Astra_icon.png"
+                                                style="max-width: 40px;" class="img-fluid" /></div>
+                                        <div class="col"><span id="best2" class="font-weight-bold">Astra</span><span
+                                                class="small"> (<span id="best2p">47</span>% win)</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <h2><span style="font-weight:800; font-size: 22px;">WORST PAIRINGS</span></h2>
+                                <div class="container-fluid">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto"><img id="worsticon0" src="agenticons/Astra_icon.png"
+                                                style="max-width: 40px;" class="img-fluid" /></div>
+                                        <div class="col"><span id="worst0" class="font-weight-bold">Astra</span><span
+                                                class="small"> (<span id="worst0p">47</span>% win)</span></div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto"><img id="worsticon1" src="agenticons/Astra_icon.png"
+                                                style="max-width: 40px;" class="img-fluid" /></div>
+                                        <div class="col"><span id="worst1" class="font-weight-bold">Astra</span><span
+                                                class="small"> (<span id="worst1p">47</span>% win)</span></div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col-auto"><img id="worsticon2" src="agenticons/Astra_icon.png"
+                                                style="max-width: 40px;" class="img-fluid" /></div>
+                                        <div class="col"><span id="worst2" class="font-weight-bold">Astra</span><span
+                                                class="small"> (<span id="worst2p">47</span>% win)</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row p-2"></div>
+        </div>
+        <div class="container">
+            <div>
+                <h2>RANK DISTRIBUTION</h2>
+                <p>Here's how many games were played in each rank group.</p>
+                <div class="text-center">
+                    <img src="rankdistribution.png" class="img-fluid d-inline-block" style="max-width: 800px;" />
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <h2>PLANT LOCATIONS</h2>
+                <p>Pick a map, rank group and site to see where they plant.</p>
+            </div>
+            <div class="row">
+                <div class="col p-0">
+                    <div data-selector="plantrank" class="selector-box slim" style="background-color: #555658;">
+                        Iron</div>
+                </div>
+                <div class="col p-0">
+                    <div data-selector="plantrank" class="selector-box slim" style="background-color: #9E6C16;">
+                        Bronze</div>
+                </div>
+                <div class="col p-0">
+                    <div id="plantrank0" data-selector="plantrank" class="selector-box slim"
+                        style="background-color: #CDD0D0;">Silver</div>
+                </div>
+                <div class="col p-0">
+                    <div data-selector="plantrank" class="selector-box slim" style="background-color: #E8B210;">
+                        Gold</div>
+                </div>
+                <div class="col p-0">
+                    <div data-selector="plantrank" class="selector-box slim" style="background-color: #39A8BA;">
+                        Platinum</div>
+                </div>
+                <div class="col p-0">
+                    <div data-selector="plantrank" class="selector-box slim" style="background-color: #A06FEC;">
+                        Diamond+</div>
+                </div>
+            </div>
+            <div class="row p-1"></div>
+            <div class="row">
+                <div class="col-2 p-0">
+                    <div id="mappl0" data-selector="mapplant" class="selector-box" style="background-color: #CE736B;">
+                        Ascent
+                    </div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="mapplant" class="selector-box" style="background-color: #D3B89E;">Bind</div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="mapplant" class="selector-box" style="background-color: #75B4D6;">Breeze</div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="mapplant" class="selector-box" style="background-color: #96A985;">Haven</div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="mapplant" class="selector-box" style="background-color: #476BA1;">Icebox</div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="mapplant" class="selector-box" style="background-color: #575757;">Split</div>
+                </div>
+            </div>
+            <div class="row p-1"></div>
+            <div class="row" style="color: black;">
+                <div class="col p-0">
+                    <div id="site0" data-selector="plantsite" class="selector-box" style="background-color: #c2c2c2;">A
+                        site
+                    </div>
+                </div>
+                <div class="col p-0">
+                    <div data-selector="plantsite" class="selector-box" style="background-color: #c2c2c2;">B site</div>
+                </div>
+                <div class="col p-0" id="Csite">
+                    <div data-selector="plantsite" class="selector-box" style="background-color: #c2c2c2;">C site</div>
+                </div>
+            </div>
+            <div class="row p-3"></div>
+            <div class="row justify-content-center">
+                <div class="col-auto position-relative" style="max-width: 700px;">
+                    <img id="siteimg" src="sites/ascenta.png" class="img-fluid" />
+                    <img id="rateimg" src="plantlocs/all/AscentAplants.png" class="position-absolute" />
+                </div>
+            </div>
+            <div class="row p-3"></div>
+        </div>
+        <div class="container">
+            <div>
+                <h2>POST PLANT POSITIONING</h2>
+                <p>Use our AI to find out how likely you are to win after planting.</p>
+                <p>Pick the map below and move the attackers, defenders and spike, and then see the probability of
+                    winning
+                    at the bottom.</p>
+            </div>
+            <div class="row">
+                <div class="col-2 p-0">
+                    <div id="mapAI0" data-selector="mapAI" class="selector-box" style="background-color: #CE736B;">
+                        Ascent
+                    </div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="mapAI" class="selector-box" style="background-color: #D3B89E;">Bind</div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="mapAI" class="selector-box" style="background-color: #75B4D6;">Breeze</div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="mapAI" class="selector-box" style="background-color: #96A985;">Haven</div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="mapAI" class="selector-box" style="background-color: #476BA1;">Icebox</div>
+                </div>
+                <div class="col-2 p-0">
+                    <div data-selector="mapAI" class="selector-box" style="background-color: #575757;">Split</div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div id="valplanttoolcontainer">
+                <object type="image/svg+xml" data="" id="mapsvg"></object>
+                <div id="players"></div>
+                <div id="mouseCapture"></div>
+                <div class="controls">
+                    <div class="control" id="zoomIn"><i class="material-icons">zoom_in</i></div>
+                    <div class="control" id="zoomOut"><i class="material-icons">zoom_out</i></div>
+                    <div class="control attacker" id="addATK"><i class="material-icons">add_circle</i></div>
+                    <div class="control defender" id="addDEF"><i class="material-icons">add_circle</i></div>
+                    <div class="control" id="remove"><i class="material-icons">delete</i></div>
+                </div>
+                <div class="selected-info">
+                    <div id="instructions">
+                        Press <span class="attacker"><i class="material-icons"
+                                style="vertical-align: bottom;">add_circle</i></span> to add an attacker. <br />
+                        Press <span class="defender"><i class="material-icons"
+                                style="vertical-align: bottom;">add_circle</i></span> to add a defender. <br />
+                        Drag the map to move it. <br />
+                        Drag the players/spike to move them.
+                    </div>
+                    <div id="selected-info" style="display: none;">
+                        <div id="selected-icon" class="player spike-bg" style="vertical-align: sub;
+                    position: relative;"></div> - <span id="selected-icon-desc">Spike and spike planter
+                            (attacker)</span> <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 attacker prob" id="attackerProb">
+                    50%
+                </div>
+                <div class="col-6 defender prob text-right" id="defenderProb">
+                    50%
+                </div>
+                <div class="col-6 attacker label-txt">
+                    Attacker win probability
+                </div>
+                <div class="col-6 defender label-txt text-right">
+                    Defender win probability
+                </div>
+            </div>
+            <div class="col-12 p-0">
+                <div class="winningbarbg defender-bg">
+                    <div id="winningbar" class="attacker-bg" style="width: 50%;"></div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.7.0/dist/tf.min.js"></script>
+        <script src="Vector2.js"></script>
+        <script>
+            function makeSelector(selectorName, func, allownone = false) {
+                let elems = document.querySelectorAll("[data-selector='" + selectorName + "']");
+                let clicklistener = (e) => {
+                    let elem = e.target;
+                    let reset = true;
+                    if (elem.classList.contains("selected") && allownone) {
+                        reset = false;
+                    }
+                    for (let el of elems) {
+                        el.classList.toggle("selected", false);
+                    }
+                    if (reset) {
+                        elem.classList.toggle("selected", true);
+                        func(elem);
+                    }
+                    else {
+                        func(null);
+                    }
+                }
+                for (let elem of elems) {
+                    elem.addEventListener("click", clicklistener)
+                }
+            }
+        </script>
+        <script type="module">
+            document.addEventListener("DOMContentLoaded", async () => {
+                // import * as tf from '@tensorflow/tfjs';
+                const maps = ["ascent", "bind", "breeze", "haven", "icebox", "split"];
+                const models = await Promise.all(maps.map(async (x) => { return await tf.loadLayersModel('/models/' + x + 'modeljs/model.json') }));
+                function zeros(shape) {
+                    if (shape.length == 0) return 0;
+                    let retarr = []
+                    for (let i = 0; i < shape[0]; i++) {
+                        retarr.push(zeros(shape.slice(1)))
+                    }
+                    return retarr;
+                }
+
+                let svgReady = false;
+                let svg;
+
+                let currMapIdx = 0;
+                let mapInitials = [
+                    {
+                        zoom: 0.4,
+                        offset: new Vector2(370, 16),
+                        positions: { "spike": [{ "id": 0, "position": { "x": 460, "y": 185 }, "visible": true, "type": "spike" }], "red": [{ "id": 1, "position": { "x": 682.2272727272726, "y": 216.82775119617213 }, "visible": true, "type": "red" }, { "id": 2, "position": { "x": 573.27990430622, "y": 252.090909090909 }, "visible": true, "type": "red" }, { "id": 3, "position": { "x": 90, "y": 60 }, "visible": false, "type": "red" }, { "id": 4, "position": { "x": 120, "y": 90 }, "visible": false, "type": "red" }, { "id": 5, "position": { "x": 150, "y": 120 }, "visible": false, "type": "red" }], "blue": [{ "id": 6, "position": { "x": 220.46787423103194, "y": 507.27887901572115 }, "visible": true, "type": "blue" }, { "id": 7, "position": { "x": 368.01674641148304, "y": 263.14354066985635 }, "visible": true, "type": "blue" }, { "id": 8, "position": { "x": 579.0693779904306, "y": 387.3540669856459 }, "visible": true, "type": "blue" }, { "id": 9, "position": { "x": 150, "y": 90 }, "visible": false, "type": "blue" }, { "id": 10, "position": { "x": 180, "y": 120 }, "visible": false, "type": "blue" }] }
+                    },
+                    {
+                        zoom: 0.25,
+                        offset: new Vector2(391, 92),
+                        positions: { "spike": [{ "id": 0, "position": { "x": 521.6176470588235, "y": 508.0882352941177 }, "visible": true, "type": "spike" }], "red": [{ "id": 1, "position": { "x": 415.58823529411757, "y": 687.9411764705882 }, "visible": true, "type": "red" }, { "id": 2, "position": { "x": 528.5294117647059, "y": 576.1764705882352 }, "visible": true, "type": "red" }, { "id": 3, "position": { "x": 551.524064171123, "y": 737.2230710466004 }, "visible": true, "type": "red" }, { "id": 4, "position": { "x": 120, "y": 90 }, "visible": false, "type": "red" }, { "id": 5, "position": { "x": 150, "y": 120 }, "visible": false, "type": "red" }], "blue": [{ "id": 6, "position": { "x": 293.3957219251338, "y": 520.9434682964093 }, "visible": true, "type": "blue" }, { "id": 7, "position": { "x": 587.6814362108481, "y": 358.0863254392665 }, "visible": true, "type": "blue" }, { "id": 8, "position": { "x": 471.96715049656234, "y": 445.2291825821236 }, "visible": true, "type": "blue" }, { "id": 9, "position": { "x": 489.1100076394195, "y": 482.37203972498077 }, "visible": true, "type": "blue" }, { "id": 10, "position": { "x": 180, "y": 120 }, "visible": false, "type": "blue" }] }
+                    },
+                    {
+                        zoom: 0.4,
+                        offset: new Vector2(366, 33),
+                        positions: { "spike": [{ "id": 0, "position": { "x": 1288.1363636363637, "y": 704.2727272727273 }, "visible": true, "type": "spike" }], "red": [{ "id": 1, "position": { "x": 1217.0000000000002, "y": 903.1913875598088 }, "visible": true, "type": "red" }, { "id": 2, "position": { "x": 1297.2799043062205, "y": 586.0909090909092 }, "visible": true, "type": "red" }, { "id": 3, "position": { "x": 90, "y": 60 }, "visible": false, "type": "red" }, { "id": 4, "position": { "x": 120, "y": 90 }, "visible": false, "type": "red" }, { "id": 5, "position": { "x": 150, "y": 120 }, "visible": false, "type": "red" }], "blue": [{ "id": 6, "position": { "x": 1033.9678742310325, "y": 757.7788790157213 }, "visible": true, "type": "blue" }, { "id": 7, "position": { "x": 1060.5167464114834, "y": 338.1435406698564 }, "visible": true, "type": "blue" }, { "id": 8, "position": { "x": 934.0693779904308, "y": 522.354066985646 }, "visible": true, "type": "blue" }, { "id": 9, "position": { "x": 150, "y": 90 }, "visible": false, "type": "blue" }, { "id": 10, "position": { "x": 180, "y": 120 }, "visible": false, "type": "blue" }] }
+                    },
+                    {
+                        zoom: 0.4,
+                        offset: new Vector2(177.24999999999994, 70),
+                        positions: { "spike": [{ "id": 0, "position": { "x": 520.3695652173913, "y": 193.97826086956522 }, "visible": true, "type": "spike" }], "red": [{ "id": 2, "position": { "x": 640.4227614490771, "y": 179.23376623376618 }, "visible": true, "type": "red" }, { "id": 3, "position": { "x": 639.6428571428571, "y": 305.7142857142858 }, "visible": true, "type": "red" }, { "id": 4, "position": { "x": 120, "y": 90 }, "visible": false, "type": "red" }, { "id": 5, "position": { "x": 150, "y": 120 }, "visible": false, "type": "red" }, { "id": 1, "position": { "x": 646.512987012987, "y": 306.82775119617213 }, "visible": false, "type": "red" }], "blue": [{ "id": 7, "position": { "x": 415.15960355434015, "y": 206.0006835269992 }, "visible": true, "type": "blue" }, { "id": 8, "position": { "x": 387.6408065618591, "y": 353.06835269993155 }, "visible": true, "type": "blue" }, { "id": 9, "position": { "x": 369.6428571428571, "y": 228.5714285714286 }, "visible": true, "type": "blue" }, { "id": 10, "position": { "x": 180, "y": 120 }, "visible": false, "type": "blue" }, { "id": 6, "position": { "x": 289.0393028024605, "y": 448.7074504442926 }, "visible": false, "type": "blue" }] }
+                    },
+                    {
+                        zoom: 0.4,
+                        offset: new Vector2(307, 45),
+                        positions: { "spike": [{ "id": 0, "position": { "x": 975, "y": 1137.5 }, "visible": true, "type": "spike" }], "red": [{ "id": 1, "position": { "x": 727.9415584415584, "y": 1126.8277511961724 }, "visible": true, "type": "red" }, { "id": 2, "position": { "x": 891.8513328776487, "y": 1016.3766233766235 }, "visible": true, "type": "red" }, { "id": 3, "position": { "x": 90, "y": 60 }, "visible": false, "type": "red" }, { "id": 4, "position": { "x": 120, "y": 90 }, "visible": false, "type": "red" }, { "id": 5, "position": { "x": 150, "y": 120 }, "visible": false, "type": "red" }], "blue": [{ "id": 6, "position": { "x": 1106.1821599453178, "y": 1027.2788790157213 }, "visible": true, "type": "blue" }, { "id": 7, "position": { "x": 953.7310321257688, "y": 924.572112098428 }, "visible": true, "type": "blue" }, { "id": 8, "position": { "x": 1063.355092276145, "y": 1064.4969241285032 }, "visible": true, "type": "blue" }, { "id": 9, "position": { "x": 150, "y": 90 }, "visible": false, "type": "blue" }, { "id": 10, "position": { "x": 180, "y": 120 }, "visible": false, "type": "blue" }] }
+                    },
+                    {
+                        zoom: 0.4,
+                        offset: new Vector2(382, 38),
+                        positions: { "spike": [{ "id": 0, "position": { "x": 448.57142857142856, "y": 1107.8571428571431 }, "visible": true, "type": "spike" }], "red": [{ "id": 1, "position": { "x": 652.9415584415583, "y": 1167.1848940533155 }, "visible": true, "type": "red" }, { "id": 2, "position": { "x": 390.7799043062199, "y": 1194.5909090909095 }, "visible": true, "type": "red" }, { "id": 3, "position": { "x": 90, "y": 60 }, "visible": false, "type": "red" }, { "id": 4, "position": { "x": 120, "y": 90 }, "visible": false, "type": "red" }, { "id": 5, "position": { "x": 150, "y": 120 }, "visible": false, "type": "red" }], "blue": [{ "id": 6, "position": { "x": 352.967874231032, "y": 1032.2788790157215 }, "visible": true, "type": "blue" }, { "id": 7, "position": { "x": 446.546158176189, "y": 1075.349423022798 }, "visible": true, "type": "blue" }, { "id": 8, "position": { "x": 554.0693779904306, "y": 877.3540669856461 }, "visible": true, "type": "blue" }, { "id": 9, "position": { "x": 150, "y": 90 }, "visible": false, "type": "blue" }, { "id": 10, "position": { "x": 180, "y": 120 }, "visible": false, "type": "blue" }] }
+                    }
+                ]
+                const mmScaling = 3.77953;
+                let maptransforms = [
+                    [-308.714, -162.369],
+                    [-976.813 / mmScaling, -57.226 / mmScaling],
+                    [-664.016 / mmScaling, -237.634 / mmScaling],
+                    [-1455.062 / mmScaling, -479.346 / mmScaling],
+                    [-659.757 / mmScaling, -963.028 / mmScaling],
+                    [-1079.325 / mmScaling, -388.861 / mmScaling]
+                ]
+                let minmaxscalings = [
+                    [[-4837.0, 7507.0], [-11057.0, 2157.0]],
+                    [[135.0, 16103.0], [-7343.0, 5754.0]],
+                    [[-1635.0, 11435.0], [-6157.0, 7155.0]],
+                    [[-3657.0, 7356.0], [-14085.0, -1742.0]],
+                    [[-8257.0, 3240.0], [-5170.0, 7152.0]],
+                    [[-3447.0, 8258.0], [-10007.0, 929.0]]
+                ]
+                function fixForMap(point_in, log = false) {
+                    let point = point_in.clone();
+                    //if (log) console.log(point);
+                    // zeroth of all we need to scale into SVG coords
+                    point.x *= svg.getBBox().width / svg.getAttribute("width");
+                    point.y *= svg.getBBox().height / svg.getAttribute("height");
+                    // first of all we need to flip the y
+                    point.y = svg.getBBox().height - point.y
+                    //if (log) console.log(point);
+                    // map transform
+                    point.x += maptransforms[currMapIdx][0]
+                    point.y += maptransforms[currMapIdx][1]
+                    //if (log) console.log(point);
+                    // now we need to apply our mm transform
+                    point.x *= mmScaling * 10
+                    point.y *= mmScaling * 10
+                    //if (log) console.log(point);
+
+                    let currscalings = minmaxscalings[currMapIdx]
+                    let tmp = point.x;
+                    point.x = point.y;
+                    point.y = tmp;
+                    //if (log) console.log(point);
+                    point.x = (point.x - currscalings[0][0]) / (currscalings[0][1] - currscalings[0][0]);
+                    point.y = (point.y - currscalings[1][0]) / (currscalings[1][1] - currscalings[1][0]);
+                    return point
+                }
+
+                let evalNeeded = true;
+                let evalInProgress = false;
+                // we want to initialise players with the maximum of 10 players, and these'll just be shown or hidden
+                let zoom = 1;
+                let playersdiv = document.getElementById("players")
+                let teams = ["spike", "red", "blue"]
+                let currclickableid = 0;
+                class Clickable {
+                    constructor(elem, position, width, visible, type) {
+                        this.elem = elem;
+                        this.position = position;
+                        this.width = width;
+                        this.visible = visible;
+                        this.selected = false;
+                        this.type = type;
+                        this.id = currclickableid;
+                        currclickableid += 1;
+                    }
+                    update() {
+                        this.elem.style.width = this.width + "px";
+                        this.elem.style.height = this.width + "px";
+                        this.elem.style.display = this.visible ? "inline-block" : "none"
+
+                        this.elem.classList.toggle("selected", this.selected)
+                        this.elem.style.marginLeft = (this.position.x * zoom) - (this.width / 2)
+                        this.elem.style.marginTop = (this.position.y * zoom) - (this.width / 2)
+                        evalNeeded = true;
+                        evaluate();
+                    }
+                    clickIsOn(click) {
+                        // click is a Vector2 in svg outercoords
+                        console.log(click, this.position);
+                        if (click.clone().sub(this.position).length() * (zoom) < (this.width / 2)) {
+                            return true;
+                        }
+                        return false;
+                    }
+                }
+
+                let currSelected = undefined;
+                let clickables = []
+                let playersShown = [0, 0]
+                let clickablesByType = {
+                    "spike": [],
+                    "red": [],
+                    "blue": []
+                }
+                for (let j = 0; j < 3; j++) {
+                    let currTeam = teams[j]
+                    for (let i = 0; i < (j == 0 ? 1 : 5); i++) {
+                        let player = document.createElement("div")
+                        player.classList.add("player", currTeam == "red" ? "attacker-bg" : (currTeam == "blue" ? "defender-bg" : "spike-bg"))
+                        clickables.push(new Clickable(player, new Vector2((i + j) * 30, i * 30), 20, j == 0, currTeam))
+                        clickables[clickables.length - 1].update();
+                        clickablesByType[currTeam].push(clickables[clickables.length - 1])
+                        playersdiv.appendChild(player)
+                    }
+                }
+
+                function evaluate() {
+                    if (!evalInProgress && evalNeeded && svgReady) {
+                        //console.log("evaled")
+                        evalNeeded = false;
+                        evalInProgress = true;
+                        const model = models[currMapIdx];
+                        // lets get our data in, ready to nn
+                        // we want the input to be a normalised tensor
+                        // we have:
+                        // plantlocation: (1, 2)
+                        // playerlocations: (1, 10, 2)
+                        // playerteams: (1, 10, 1)
+                        setTimeout(() => {
+                            let plantlocation = zeros([1, 2])
+                            let currplayercount = 0;
+                            let playerlocs = zeros([1, 10, 2])
+                            let playerteams = zeros([1, 10, 1])
+                            let currVisibleClickables = []
+                            for (let clickable of clickables) {
+                                if (clickable.visible) {
+                                    currVisibleClickables.push(clickable);
+                                    if (clickable.type == "spike") {
+                                        currVisibleClickables.push({
+                                            type: "red",
+                                            position: clickable.position.clone()
+                                        })
+                                    }
+                                }
+                            }
+                            currVisibleClickables.sort((a, b) => { return a.position.y - b.position.y; })
+                            for (let clickable of currVisibleClickables) {
+                                if (clickable.type == "spike") {
+                                    let fixpos = fixForMap(clickable.position)
+                                    plantlocation[0][0] = fixpos.x;
+                                    plantlocation[0][1] = fixpos.y;
+                                }
+                                else {
+                                    //console.log(clickable.position)
+                                    let fixpos = fixForMap(clickable.position)
+                                    playerlocs[0][currplayercount][0] = fixpos.x;
+                                    playerlocs[0][currplayercount][1] = fixpos.y;
+                                    playerteams[0][currplayercount][0] = clickable.type == "red" ? -1 : 1;
+                                    currplayercount += 1;
+                                }
+                            }
+                            let forceRes = false;
+                            //console.log(currplayercount, playersShown[0] + 1)
+                            if (currplayercount == (playersShown[0] + 1)) forceRes = true;
+                            model.predict([tf.tensor(plantlocation), tf.tensor(playerlocs), tf.tensor(playerteams)]).array().then((array) => {
+                                let res = array[0][0];
+                                let resround = Math.round(res * 1000) / 10;
+                                if (forceRes) resround = 0;
+                                document.getElementById("attackerProb").innerHTML = (100 - resround).toFixed(1) + "%";
+                                document.getElementById("defenderProb").innerHTML = resround.toFixed(1) + "%";
+                                document.getElementById("winningbar").style.width = (100 - resround).toFixed(1) + "%"
+                                evalInProgress = false;
+                                if (evalNeeded) {
+                                    evaluate();
+                                }
+                            });
+                        }, 200);
+                        return;
+                    }
+                }
+
+                let container = document.getElementById("valplanttoolcontainer")
+                let object = document.getElementById("mapsvg")
+
+                let svgWidth;
+                let svgHeight;
+
+                let map;
+                let mousePressed;
+                let mousePressedObj;
+                let objPreoffset;
+                let mouseCoords;
+
+                let svgPreoffset;
+                let svgOffset;
+                let centercoords;
+
+                let offsetToCenterCoords = (offset) => {
+                    let ret = new Vector2();
+                    ret.x = ((container.offsetWidth / 2) - offset.x) / zoom  /// zoom;
+                    ret.y = ((container.offsetHeight / 2) - offset.y) / zoom /// zoom;
+                    return ret;
+                }
+                let centerCoordsToOffset = (ccoords) => {
+                    let ret = new Vector2();
+                    ret.x = ((container.offsetWidth / 2) - (ccoords.x * zoom))
+                    ret.y = ((container.offsetHeight / 2) - (ccoords.y * zoom))
+                    return ret;
+                }
+
+                let updateSVGPos = () => {
+                    // we want to prevent the svg from being scrolled too far
+                    // a neat way to do this is to make sure that centercoords.x doesn't go below 0 and above svg.offsetWidth, same for y
+                    let maxMargins = centerCoordsToOffset(new Vector2(0, 0));
+                    let minMargins = centerCoordsToOffset(new Vector2(svgWidth, svgHeight));
+                    svgOffset.clamp(minMargins, maxMargins)
+                    object.style.marginTop = svgOffset.y;
+                    object.style.marginLeft = svgOffset.x;
+                    playersdiv.style.marginTop = svgOffset.y;
+                    playersdiv.style.marginLeft = svgOffset.x;
+                    centercoords = offsetToCenterCoords(svgOffset)
+                }
+
+                let firstload = false;
+
+                let objload = () => {
+                    svg = object.contentDocument.getElementsByTagName("svg")[0];
+                    svgReady = true;
+                    evaluate();
+                    svgWidth = parseFloat(svg.getAttribute("width"));
+                    svgHeight = parseFloat(svg.getAttribute("height"));
+
+                    map = document.getElementById("mouseCapture")
+                    mousePressed = false;
+                    mousePressedObj = undefined;
+                    objPreoffset = new Vector2(0, 0);
+                    mouseCoords = new Vector2()
+
+                    zoom = mapInitials[currMapIdx].zoom;
+                    svgPreoffset = new Vector2(0, 0)
+                    svgOffset = mapInitials[currMapIdx].offset.clone();
+                    centercoords = new Vector2(0, 0)
+
+                    let precoords = mapInitials[currMapIdx].positions;
+                    playersShown = [0, 0];
+                    for (let key in precoords) {
+                        for (let i = 0; i < precoords[key].length; i++) {
+                            let prec = precoords[key][i]
+                            let newc = clickablesByType[key][i]
+                            newc.id = prec.id;
+                            newc.visible = prec.visible;
+                            newc.type = prec.type;
+                            newc.position.x = prec.position.x;
+                            newc.position.y = prec.position.y;
+                            if (prec.visible && prec.type != "spike") {
+                                playersShown[prec.type == "red" ? 0 : 1] += 1;
+                            }
+                        }
+                    }
+
+                    let mapclick = (e) => {
+                        e.preventDefault()
+                        let clickPos = new Vector2(e.pageX - container.offsetLeft, e.pageY - container.offsetTop).sub(new Vector2(container.offsetWidth / 2, container.offsetHeight / 2)).multiplyScalar(1 / zoom).add(centercoords) // .multiplyScalar(1 / zoom);
+                        // this is where the click is in svg coordinates
+                        for (let clickable of clickables) { if (clickable.selected != false) { clickable.selected = false; clickable.update() } }
+                        currSelected = undefined;
+                        document.getElementById("remove").style.display = "none";
+                        document.getElementById("selected-info").style.display = "none";
+                        document.getElementById("instructions").style.display = "block";
+                        document.getElementById("selected-icon").classList.toggle("spike-bg", false);
+                        document.getElementById("selected-icon").classList.toggle("attacker-bg", false);
+                        document.getElementById("selected-icon").classList.toggle("defender-bg", false);
+                        for (let clickable of clickables.reverse()) {
+                            if (clickable.clickIsOn(clickPos)) {
+                                // basically we need to select it and translate movement to it
+                                mousePressed = false
+                                mousePressedObj = clickable;
+                                objPreoffset = mousePressedObj.position.clone();
+                                mouseCoords.x = e.clientX;
+                                mouseCoords.y = e.clientY;
+
+                                clickable.selected = true;
+                                if (clickable.type != "spike") document.getElementById("remove").style.display = "inline-block";
+                                document.getElementById("selected-info").style.display = "block";
+                                document.getElementById("instructions").style.display = "none";
+                                if (clickable.type == "spike") {
+                                    document.getElementById("selected-icon").classList.toggle("spike-bg", true);
+                                    document.getElementById("selected-icon-desc").innerHTML = "Spike and spike planter (attacker)";
+                                }
+                                else if (clickable.type == "red") {
+                                    document.getElementById("selected-icon").classList.toggle("attacker-bg", true);
+                                    document.getElementById("selected-icon-desc").innerHTML = "Attacking player";
+                                }
+                                else if (clickable.type == "blue") {
+                                    document.getElementById("selected-icon").classList.toggle("defender-bg", true);
+                                    document.getElementById("selected-icon-desc").innerHTML = "Defending player";
+                                }
+                                currSelected = clickable;
+                                clickable.update();
+                                return;
+                            }
+                        }
+                        mousePressed = true;
+                        mousePressedObj = undefined;
+                        mouseCoords.x = e.clientX;
+                        mouseCoords.y = e.clientY;
+                        svgPreoffset = svgOffset.clone()
+                    }
+                    let mapunclick = (e) => {
+                        e.preventDefault()
+                        mousePressed = false;
+                        mousePressedObj = undefined;
+                    }
+                    let mapmove = (e) => {
+                        let evec = new Vector2(e.clientX, e.clientY);
+                        if (mousePressedObj !== undefined) {
+                            e.preventDefault()
+                            mousePressedObj.position.addVectors(objPreoffset, (new Vector2()).subVectors(evec, mouseCoords).multiplyScalar(1 / zoom))
+                            mousePressedObj.update();
+                            return;
+                        }
+                        if (mousePressed) {
+                            e.preventDefault()
+
+                            svgOffset.addVectors(svgPreoffset, (new Vector2()).subVectors(evec, mouseCoords))
+                            updateSVGPos();
+                        }
+                    }
+                    if (!firstload) {
+                        map.addEventListener("mousedown", mapclick)
+                        map.addEventListener("mousemove", mapmove)
+                        map.addEventListener("mouseup", mapunclick)
+                    }
+
+                    let updateZoom = () => {
+                        // TODO: clamp our zoom: different settings for different maps
+                        svg.style.transformOrigin = "0 0"
+                        //svg.style.transform = "scale(" + zoom + "," + zoom + ")"
+                        object.style.width = (parseFloat(svg.getAttribute("width")) * zoom) + "px";
+                        clickables.map((x) => { x.update() })
+                    }
+                    let updatePosNewZoom = () => {
+                        svgOffset = centerCoordsToOffset(centercoords)
+                        updateSVGPos();
+                    }
+                    //updateZoom();
+                    if (!firstload) {
+                        document.getElementById("zoomIn").addEventListener("click", () => {
+                            zoom += 0.15;
+                            // we need to preserve centercoords calculations
+                            updateZoom();
+                            updatePosNewZoom();
+                        })
+                        document.getElementById("zoomOut").addEventListener("click", () => {
+                            zoom -= 0.15;
+                            updateZoom();
+                            updatePosNewZoom();
+                        })
+                        document.getElementById("addATK").addEventListener("click", () => {
+                            if (playersShown[0] < 4) {
+                                let newClickable = clickablesByType["red"][playersShown[0]];
+                                newClickable.visible = true;
+                                newClickable.position = centercoords.clone();
+                                newClickable.update();
+                                playersShown[0] += 1;
+                            }
+                        })
+                        document.getElementById("addDEF").addEventListener("click", () => {
+                            if (playersShown[1] < 5) {
+                                let newClickable = clickablesByType["blue"][playersShown[1]];
+                                newClickable.visible = true;
+                                newClickable.position = centercoords.clone();
+                                newClickable.update();
+                                playersShown[1] += 1;
+                            }
+                        })
+                        document.getElementById("remove").addEventListener("click", () => {
+                            if (currSelected.type != "spike") {
+                                currSelected.visible = false;
+                                currSelected.update()
+                                let team = currSelected.type;
+                                let data = clickablesByType[team];
+                                data.push(data.splice(data.findIndex(x => x.id == currSelected.id), 1)[0])
+
+                                playersShown[teams.indexOf(team) - 1] -= 1;
+                            }
+                        })
+
+                        // document.getElementById("logstate").addEventListener("click", () => {
+                        //     let processed = {}
+                        //     for (let key in clickablesByType) {
+                        //         processed[key] = clickablesByType[key].map((x) => {
+                        //             return {
+                        //                 id: x.id,
+                        //                 position: x.position.clone(),
+                        //                 visible: x.visible,
+                        //                 type: x.type
+                        //             }
+                        //         })
+                        //     }
+                        //     console.log(JSON.stringify(processed));
+                        //     console.log(zoom);
+                        //     console.log(svgOffset);
+                        //     console.log(fixForMap(processed["spike"][0].position, true))
+                        // })
+                    }
+                    firstload = true;
+                    updateZoom();
+                    updateSVGPos();
+                }
+
+                object.addEventListener("load", objload)
+                function switchMap(idx) {
+                    currMapIdx = idx;
+                    let mapname = maps[idx];
+                    object.setAttribute("data", mapname + ".svg")
+                }
+
+                makeSelector("mapAI", (elem) => {
+                    let map = elem.innerHTML.replace(/\s+/g, '').toLowerCase();
+                    switchMap(maps.indexOf(map));
+                })
+                document.getElementById("mapAI0").click();
+            });
+        </script>
+        <script>
+            let pickrates = {
+                Astra: 0.05406092995932884,
+                Breach: 0.08903946610828874,
+                Brimstone: 0.20413326737613308,
+                Cypher: 0.17848852594349265,
+                Jett: 0.7114271545867612,
+                Killjoy: 0.29710103582687847,
+                Omen: 0.37868813622424385,
+                Phoenix: 0.2291332936725883,
+                Raze: 0.4448494678885132,
+                Reyna: 0.6850954898332561,
+                Sage: 0.8454367506382986,
+                Skye: 0.1626210770223285,
+                Sova: 0.36437799598051307,
+                Viper: 0.2444483170291829,
+                Yoru: 0.11109909191019239
+            }
+            let agentColors = {
+                "Astra": "#CA34AF",
+                "Breach": "#FF824C",
+                "Brimstone": "#FF5900",
+                "Cypher": "#B8BAB9",
+                "Jett": "#75D2E0",
+                "Killjoy": "#F8DD30",
+                "Omen": "#AAA8F4",
+                "Phoenix": "#F6A056",
+                "Raze": "#FF5E34",
+                "Reyna": "#CE53AF",
+                "Sage": "#3BDFC3",
+                "Skye": "#7EDDB9",
+                "Sova": "#F4DBC1",
+                "Viper": "#00C946",
+                "Yoru": "#3B80EF"
+            }
+            let rankToIdx = {
+                "Iron": 0,
+                "Bronze": 1,
+                "Silver": 2,
+                "Gold": 3,
+                "Platinum": 4,
+                "Diamond+": 5
+            }
+            let agentpairings = { 'Killjoy': [{ 'agent': 'Astra', 'winrate': 0.5023474178403756 }, { 'agent': 'Breach', 'winrate': 0.4295415959252971 }, { 'agent': 'Brimstone', 'winrate': 0.48965169106511863 }, { 'agent': 'Cypher', 'winrate': 0.46421663442940037 }, { 'agent': 'Jett', 'winrate': 0.49908287477071867 }, { 'agent': 'Omen', 'winrate': 0.4979630209965528 }, { 'agent': 'Phoenix', 'winrate': 0.48253493013972054 }, { 'agent': 'Raze', 'winrate': 0.5050855867030514 }, { 'agent': 'Reyna', 'winrate': 0.5045288415699984 }, { 'agent': 'Sage', 'winrate': 0.507338056680162 }, { 'agent': 'Skye', 'winrate': 0.4708333333333333 }, { 'agent': 'Sova', 'winrate': 0.498846331333641 }, { 'agent': 'Viper', 'winrate': 0.5016722408026756 }, { 'agent': 'Yoru', 'winrate': 0.47146401985111663 }], 'Viper': [{ 'agent': 'Astra', 'winrate': 0.46308724832214765 }, { 'agent': 'Breach', 'winrate': 0.4735915492957746 }, { 'agent': 'Brimstone', 'winrate': 0.4498525073746313 }, { 'agent': 'Cypher', 'winrate': 0.4983351831298557 }, { 'agent': 'Jett', 'winrate': 0.49760306807286675 }, { 'agent': 'Killjoy', 'winrate': 0.5016722408026756 }, { 'agent': 'Omen', 'winrate': 0.4699248120300752 }, { 'agent': 'Phoenix', 'winrate': 0.47560975609756095 }, { 'agent': 'Raze', 'winrate': 0.499841822208162 }, { 'agent': 'Reyna', 'winrate': 0.505350553505535 }, { 'agent': 'Sage', 'winrate': 0.498936170212766 }, { 'agent': 'Skye', 'winrate': 0.47174447174447176 }, { 'agent': 'Sova', 'winrate': 0.4956090110729286 }, { 'agent': 'Yoru', 'winrate': 0.44022988505747124 }], 'Raze': [{ 'agent': 'Astra', 'winrate': 0.5110062893081762 }, { 'agent': 'Breach', 'winrate': 0.47198772064466615 }, { 'agent': 'Brimstone', 'winrate': 0.4818959842001317 }, { 'agent': 'Cypher', 'winrate': 0.48314127187366623 }, { 'agent': 'Jett', 'winrate': 0.4928785158587672 }, { 'agent': 'Killjoy', 'winrate': 0.5050855867030514 }, { 'agent': 'Omen', 'winrate': 0.4839724680432645 }, { 'agent': 'Phoenix', 'winrate': 0.47033188065705667 }, { 'agent': 'Reyna', 'winrate': 0.5068186899172815 }, { 'agent': 'Sage', 'winrate': 0.5073765234124439 }, { 'agent': 'Skye', 'winrate': 0.47396082178690874 }, { 'agent': 'Sova', 'winrate': 0.4963768115942029 }, { 'agent': 'Viper', 'winrate': 0.499841822208162 }, { 'agent': 'Yoru', 'winrate': 0.4573248407643312 }], 'Brimstone': [{ 'agent': 'Astra', 'winrate': 0.484375 }, { 'agent': 'Breach', 'winrate': 0.4701627486437613 }, { 'agent': 'Cypher', 'winrate': 0.4970464135021097 }, { 'agent': 'Jett', 'winrate': 0.4863496257155438 }, { 'agent': 'Killjoy', 'winrate': 0.48965169106511863 }, { 'agent': 'Omen', 'winrate': 0.4419889502762431 }, { 'agent': 'Phoenix', 'winrate': 0.47062621045836023 }, { 'agent': 'Raze', 'winrate': 0.4818959842001317 }, { 'agent': 'Reyna', 'winrate': 0.4928259513412352 }, { 'agent': 'Sage', 'winrate': 0.491835724888669 }, { 'agent': 'Skye', 'winrate': 0.4613733905579399 }, { 'agent': 'Sova', 'winrate': 0.49886415265788275 }, { 'agent': 'Viper', 'winrate': 0.4498525073746313 }, { 'agent': 'Yoru', 'winrate': 0.4537177541729894 }], 'Jett': [{ 'agent': 'Astra', 'winrate': 0.45585215605749485 }, { 'agent': 'Breach', 'winrate': 0.46912298910223144 }, { 'agent': 'Brimstone', 'winrate': 0.4863496257155438 }, { 'agent': 'Cypher', 'winrate': 0.4836527621195039 }, { 'agent': 'Killjoy', 'winrate': 0.49908287477071867 }, { 'agent': 'Omen', 'winrate': 0.4909438775510204 }, { 'agent': 'Phoenix', 'winrate': 0.48197301481973015 }, { 'agent': 'Raze', 'winrate': 0.4928785158587672 }, { 'agent': 'Reyna', 'winrate': 0.49976546270857064 }, { 'agent': 'Sage', 'winrate': 0.4977260708619778 }, { 'agent': 'Skye', 'winrate': 0.4752146219883689 }, { 'agent': 'Sova', 'winrate': 0.49364699962259406 }, { 'agent': 'Viper', 'winrate': 0.49760306807286675 }, { 'agent': 'Yoru', 'winrate': 0.4577272727272727 }], 'Omen': [{ 'agent': 'Astra', 'winrate': 0.4368932038834951 }, { 'agent': 'Breach', 'winrate': 0.46551724137931033 }, { 'agent': 'Brimstone', 'winrate': 0.4419889502762431 }, { 'agent': 'Cypher', 'winrate': 0.44976076555023925 }, { 'agent': 'Jett', 'winrate': 0.4909438775510204 }, { 'agent': 'Killjoy', 'winrate': 0.4979630209965528 }, { 'agent': 'Phoenix', 'winrate': 0.47856876630637346 }, { 'agent': 'Raze', 'winrate': 0.4839724680432645 }, { 'agent': 'Reyna', 'winrate': 0.4838709677419355 }, { 'agent': 'Sage', 'winrate': 0.49268819314947493 }, { 'agent': 'Skye', 'winrate': 0.4555694618272841 }, { 'agent': 'Sova', 'winrate': 0.47992840705701867 }, { 'agent': 'Viper', 'winrate': 0.4699248120300752 }, { 'agent': 'Yoru', 'winrate': 0.457167090754877 }], 'Cypher': [{ 'agent': 'Astra', 'winrate': 0.4634146341463415 }, { 'agent': 'Breach', 'winrate': 0.43492063492063493 }, { 'agent': 'Brimstone', 'winrate': 0.4970464135021097 }, { 'agent': 'Jett', 'winrate': 0.4836527621195039 }, { 'agent': 'Killjoy', 'winrate': 0.46421663442940037 }, { 'agent': 'Omen', 'winrate': 0.44976076555023925 }, { 'agent': 'Phoenix', 'winrate': 0.4814502529510961 }, { 'agent': 'Raze', 'winrate': 0.48314127187366623 }, { 'agent': 'Reyna', 'winrate': 0.4890629219551715 }, { 'agent': 'Sage', 'winrate': 0.48938992042440316 }, { 'agent': 'Skye', 'winrate': 0.45368916797488223 }, { 'agent': 'Sova', 'winrate': 0.497737556561086 }, { 'agent': 'Viper', 'winrate': 0.4983351831298557 }, { 'agent': 'Yoru', 'winrate': 0.4351297405189621 }], 'Sage': [{ 'agent': 'Astra', 'winrate': 0.47865353037766833 }, { 'agent': 'Breach', 'winrate': 0.4749801429706116 }, { 'agent': 'Brimstone', 'winrate': 0.491835724888669 }, { 'agent': 'Cypher', 'winrate': 0.48938992042440316 }, { 'agent': 'Jett', 'winrate': 0.4977260708619778 }, { 'agent': 'Killjoy', 'winrate': 0.507338056680162 }, { 'agent': 'Omen', 'winrate': 0.49268819314947493 }, { 'agent': 'Phoenix', 'winrate': 0.49122807017543857 }, { 'agent': 'Raze', 'winrate': 0.5073765234124439 }, { 'agent': 'Reyna', 'winrate': 0.5067175572519084 }, { 'agent': 'Skye', 'winrate': 0.4933041814703471 }, { 'agent': 'Sova', 'winrate': 0.5013073209975865 }, { 'agent': 'Viper', 'winrate': 0.498936170212766 }, { 'agent': 'Yoru', 'winrate': 0.4675711449371277 }], 'Reyna': [{ 'agent': 'Astra', 'winrate': 0.47586206896551725 }, { 'agent': 'Breach', 'winrate': 0.4829965500246427 }, { 'agent': 'Brimstone', 'winrate': 0.4928259513412352 }, { 'agent': 'Cypher', 'winrate': 0.4890629219551715 }, { 'agent': 'Jett', 'winrate': 0.49976546270857064 }, { 'agent': 'Killjoy', 'winrate': 0.5045288415699984 }, { 'agent': 'Omen', 'winrate': 0.4838709677419355 }, { 'agent': 'Phoenix', 'winrate': 0.4874617737003058 }, { 'agent': 'Raze', 'winrate': 0.5068186899172815 }, { 'agent': 'Sage', 'winrate': 0.5067175572519084 }, { 'agent': 'Skye', 'winrate': 0.49483695652173915 }, { 'agent': 'Sova', 'winrate': 0.4993903925871739 }, { 'agent': 'Viper', 'winrate': 0.505350553505535 }, { 'agent': 'Yoru', 'winrate': 0.467680608365019 }], 'Yoru': [{ 'agent': 'Astra', 'winrate': 0.43670886075949367 }, { 'agent': 'Breach', 'winrate': 0.4396551724137931 }, { 'agent': 'Brimstone', 'winrate': 0.4537177541729894 }, { 'agent': 'Cypher', 'winrate': 0.4351297405189621 }, { 'agent': 'Jett', 'winrate': 0.4577272727272727 }, { 'agent': 'Killjoy', 'winrate': 0.47146401985111663 }, { 'agent': 'Omen', 'winrate': 0.457167090754877 }, { 'agent': 'Phoenix', 'winrate': 0.4803921568627451 }, { 'agent': 'Raze', 'winrate': 0.4573248407643312 }, { 'agent': 'Reyna', 'winrate': 0.467680608365019 }, { 'agent': 'Sage', 'winrate': 0.4675711449371277 }, { 'agent': 'Skye', 'winrate': 0.4119718309859155 }, { 'agent': 'Sova', 'winrate': 0.44247038917089676 }, { 'agent': 'Viper', 'winrate': 0.44022988505747124 }], 'Sova': [{ 'agent': 'Astra', 'winrate': 0.46346555323590816 }, { 'agent': 'Breach', 'winrate': 0.4807987711213518 }, { 'agent': 'Brimstone', 'winrate': 0.49886415265788275 }, { 'agent': 'Cypher', 'winrate': 0.497737556561086 }, { 'agent': 'Jett', 'winrate': 0.49364699962259406 }, { 'agent': 'Killjoy', 'winrate': 0.498846331333641 }, { 'agent': 'Omen', 'winrate': 0.47992840705701867 }, { 'agent': 'Phoenix', 'winrate': 0.47752365930599366 }, { 'agent': 'Raze', 'winrate': 0.4963768115942029 }, { 'agent': 'Reyna', 'winrate': 0.4993903925871739 }, { 'agent': 'Sage', 'winrate': 0.5013073209975865 }, { 'agent': 'Skye', 'winrate': 0.49144634525660963 }, { 'agent': 'Viper', 'winrate': 0.4956090110729286 }, { 'agent': 'Yoru', 'winrate': 0.44247038917089676 }], 'Astra': [{ 'agent': 'Breach', 'winrate': 0.5 }, { 'agent': 'Brimstone', 'winrate': 0.484375 }, { 'agent': 'Cypher', 'winrate': 0.4634146341463415 }, { 'agent': 'Jett', 'winrate': 0.45585215605749485 }, { 'agent': 'Killjoy', 'winrate': 0.5023474178403756 }, { 'agent': 'Omen', 'winrate': 0.4368932038834951 }, { 'agent': 'Phoenix', 'winrate': 0.4264264264264264 }, { 'agent': 'Raze', 'winrate': 0.5110062893081762 }, { 'agent': 'Reyna', 'winrate': 0.47586206896551725 }, { 'agent': 'Sage', 'winrate': 0.47865353037766833 }, { 'agent': 'Skye', 'winrate': 0.4413145539906103 }, { 'agent': 'Sova', 'winrate': 0.46346555323590816 }, { 'agent': 'Viper', 'winrate': 0.46308724832214765 }, { 'agent': 'Yoru', 'winrate': 0.43670886075949367 }], 'Phoenix': [{ 'agent': 'Astra', 'winrate': 0.4264264264264264 }, { 'agent': 'Breach', 'winrate': 0.4281298299845441 }, { 'agent': 'Brimstone', 'winrate': 0.47062621045836023 }, { 'agent': 'Cypher', 'winrate': 0.4814502529510961 }, { 'agent': 'Jett', 'winrate': 0.48197301481973015 }, { 'agent': 'Killjoy', 'winrate': 0.48253493013972054 }, { 'agent': 'Omen', 'winrate': 0.47856876630637346 }, { 'agent': 'Raze', 'winrate': 0.47033188065705667 }, { 'agent': 'Reyna', 'winrate': 0.4874617737003058 }, { 'agent': 'Sage', 'winrate': 0.49122807017543857 }, { 'agent': 'Skye', 'winrate': 0.46994535519125685 }, { 'agent': 'Sova', 'winrate': 0.47752365930599366 }, { 'agent': 'Viper', 'winrate': 0.47560975609756095 }, { 'agent': 'Yoru', 'winrate': 0.4803921568627451 }], 'Skye': [{ 'agent': 'Astra', 'winrate': 0.4413145539906103 }, { 'agent': 'Breach', 'winrate': 0.41901408450704225 }, { 'agent': 'Brimstone', 'winrate': 0.4613733905579399 }, { 'agent': 'Cypher', 'winrate': 0.45368916797488223 }, { 'agent': 'Jett', 'winrate': 0.4752146219883689 }, { 'agent': 'Killjoy', 'winrate': 0.4708333333333333 }, { 'agent': 'Omen', 'winrate': 0.4555694618272841 }, { 'agent': 'Phoenix', 'winrate': 0.46994535519125685 }, { 'agent': 'Raze', 'winrate': 0.47396082178690874 }, { 'agent': 'Reyna', 'winrate': 0.49483695652173915 }, { 'agent': 'Sage', 'winrate': 0.4933041814703471 }, { 'agent': 'Sova', 'winrate': 0.49144634525660963 }, { 'agent': 'Viper', 'winrate': 0.47174447174447176 }, { 'agent': 'Yoru', 'winrate': 0.4119718309859155 }], 'Breach': [{ 'agent': 'Astra', 'winrate': 0.5 }, { 'agent': 'Brimstone', 'winrate': 0.4701627486437613 }, { 'agent': 'Cypher', 'winrate': 0.43492063492063493 }, { 'agent': 'Jett', 'winrate': 0.46912298910223144 }, { 'agent': 'Killjoy', 'winrate': 0.4295415959252971 }, { 'agent': 'Omen', 'winrate': 0.46551724137931033 }, { 'agent': 'Phoenix', 'winrate': 0.4281298299845441 }, { 'agent': 'Raze', 'winrate': 0.47198772064466615 }, { 'agent': 'Reyna', 'winrate': 0.4829965500246427 }, { 'agent': 'Sage', 'winrate': 0.4749801429706116 }, { 'agent': 'Skye', 'winrate': 0.41901408450704225 }, { 'agent': 'Sova', 'winrate': 0.4807987711213518 }, { 'agent': 'Viper', 'winrate': 0.4735915492957746 }, { 'agent': 'Yoru', 'winrate': 0.4396551724137931 }] }
+            for (let key in agentpairings) {
+                agentpairings[key].sort((a, b) => { return a.winrate - b.winrate })
+            }
+            let noRanks = Object.keys(rankToIdx).length
+            let abilityCasts = [[[0.34009692942949515, 0.19270062072662186, 0.904538159895653, 0.08003709316236013], [0.25135818590103753, 0.9367676054424509, 0.4854242866678118, 0.09798207457437196], [0.2800945652054094, 0.37845990695460635, 1.286713332976436, 0.11782003522874028], [0.9876663644900006, 0.6836026351197304, 0.6467427187921574, 0.08488389678953406], [0.6059833768559292, 0.45956797098192514, 0.48526106263138435, 0.11270174107469484], [0.7514402469283836, 0.43703039196953614, 0.3933792287420044, 0.10080715844230438], [0.30572561827914985, 0.24885319325639152, 1.0824792993721477, 0.09713607317528748], [0.14786282063828987, 0.48213552486852257, 0.3261614780015726, 0.14056579063384417], [0.5290021428551209, 0.39777901266584065, 0.6322202567151617, 0.11784291577037384], [0.6369917749795599, 0.38251399776855716, 0.22330326628443348, 0.07861140288207129], [0.4752903460857308, 0.3857384064033961, 0.41521991956232535, 0.07900280987468614], [0.14323173556591448, 0.31854567007375045, 0.9965783831734718, 0.15359878260867005], [0.18113473635232466, 0.49066894715164994, 1.1118544524994205, 0.1013200198843732], [0.5346753052902458, 0.3065260315472404, 0.6645040056737557, 0.07919832672570493], [0.21100972517481165, 0.5464972208386379, 0.7333646777759552, 0.14042164317353645]], [[0.4558301647995959, 0.21309271506043334, 1.147858774108489, 0.09603285162688428], [0.2566126562393854, 1.0436057130403922, 0.5394973399478113, 0.10601753070957139], [0.3453151646172842, 0.42670417207656525, 1.5133134910824813, 0.11959042639310542], [1.063544154791622, 0.8845165846861791, 0.6837049460989564, 0.09538084660979496], [0.6852690178453165, 0.4440181044054645, 0.5406764493307817, 0.12974714853917632], [0.9221868898825453, 0.4836350086178247, 0.4120595019961575, 0.11485745424462462], [0.30537007961861884, 0.27908502689306025, 1.319977509726708, 0.09849727142055055], [0.17755951524828756, 0.5807628637209913, 0.386293018158864, 0.15877104071854517], [0.5821746578131242, 0.5260037631037203, 0.7056491723717335, 0.12702049864363318], [0.6722063774472288, 0.42464077095284514, 0.24083724200999335, 0.0867676773546869], [0.5452563651348801, 0.49304944059624395, 0.4577475112481221, 0.09079948003862384], [0.15562509501013366, 0.318419863777284, 1.2087780968038595, 0.16051510743734496], [0.2578909617178031, 0.6242826516113268, 1.20347428367032, 0.10904634753780569], [0.5713515510221523, 0.4006252230588502, 0.7374038911030298, 0.08692111750576927], [0.3200418049420962, 0.6826392321251284, 0.8442160854305257, 0.14956379312586232]], [[0.4788444133185739, 0.21598299794651252, 1.2291598805191437, 0.09279044647982201], [0.2745616187992111, 1.113639390610535, 0.6077647234751983, 0.10901226485233463], [0.3499036344959459, 0.4329226867655054, 1.568583360226853, 0.1215080864461763], [1.1361973831090029, 1.0326468914304823, 0.7152405578988061, 0.09728255419845679], [0.7431641780162019, 0.4394785246354277, 0.5754172674531142, 0.13952454407116663], [1.0077378868928573, 0.5142283494550184, 0.40799874999777197, 0.11797856016360818], [0.3103781433993734, 0.30298268021109, 1.4599044377498458, 0.09987172100760774], [0.18299423836680043, 0.6248020134835633, 0.4057985451638838, 0.16397802482829862], [0.618469745621629, 0.6147713898492893, 0.7549139522959702, 0.13514414087970722], [0.6779521673682478, 0.42963534787487706, 0.24354842766513285, 0.08702821173305549], [0.5859361419171419, 0.5854008051811311, 0.4612729352388215, 0.09792631747497096], [0.14604322222095584, 0.3236911013370089, 1.3366930548917246, 0.17065247612492845], [0.3318465232131293, 0.7258654665086723, 1.2752241678311818, 0.11091351542132327], [0.6071229012310839, 0.4499209100710742, 0.7912472758949266, 0.09117081094649246], [0.41214498046511283, 0.7541330934259116, 0.9273739633415902, 0.15815311483606448]], [[0.5439907528119589, 0.19463531374359777, 1.3953026129593202, 0.09456675751856874], [0.28631965785256686, 1.2059279662161975, 0.620023090968798, 0.1124004401042844], [0.3678984734519315, 0.4355755786342487, 1.6607310745198884, 0.12355707081977459], [1.1655482881627932, 1.1360376505870156, 0.7306807074920922, 0.09614775244558299], [0.7861013755506688, 0.44044990387110966, 0.6003599635559165, 0.1445271535184708], [1.0491246001401484, 0.5442737713664296, 0.40255874423414306, 0.12089705780974923], [0.3024915961883619, 0.32976257722300883, 1.5736685681336713, 0.0978133669943314], [0.17789603728692152, 0.6767182909024481, 0.434338070298691, 0.1733906911373683], [0.6500687776812849, 0.6675772759515605, 0.7864590987162954, 0.13606609806337214], [0.6888484893880701, 0.41982564641731784, 0.2382551412059333, 0.08517766402198289], [0.6149560983601209, 0.6640297241863953, 0.4660888901853338, 0.10168249738515812], [0.14052866845006218, 0.3545884776651961, 1.4331795656443902, 0.1703051736884449], [0.39930925768028486, 0.8090269081783726, 1.3113844949703555, 0.11303147159106507], [0.6436649797929569, 0.5007434259637886, 0.8271366038130293, 0.09769049548568547], [0.4986580932466489, 0.8134175256899832, 0.9725614542745717, 0.162811215314632]], [[0.6276298493730836, 0.22193016530262805, 1.4255883385250327, 0.09366497118141544], [0.2890787694255469, 1.2624007694783117, 0.6681696317520196, 0.1116828593689807], [0.3700991360214028, 0.4296739741553245, 1.7314381362767524, 0.12602574077840015], [1.2119909559975832, 1.1862540120158376, 0.7500187778436913, 0.09844199400608498], [0.7781083988330837, 0.44998702116688855, 0.6213347785267228, 0.14915509758426543], [1.075381065713419, 0.5520563489652845, 0.4047576284840727, 0.12249090487034367], [0.306772017154408, 0.37170846162137094, 1.667986968500484, 0.10088692231074804], [0.18372381152802322, 0.71779534742343, 0.4667633972174788, 0.17604266065938523], [0.6630681886444268, 0.7283842005375697, 0.8033883097844616, 0.13993530308010416], [0.723057490318755, 0.4151110267472469, 0.2509259942647646, 0.08515956069504409], [0.6250440592531717, 0.7075406215830065, 0.462682486441456, 0.10865072383174702], [0.13591503016632525, 0.36702945664463116, 1.506912127058714, 0.16824278000607332], [0.43306518381087805, 0.8394793892853625, 1.3021469740971787, 0.11512478408608], [0.6423979363992973, 0.49702790330005797, 0.8429294812580662, 0.10018580506589277], [0.49744018119587247, 0.8087932704359188, 1.0262139491921631, 0.1667408134445697]], [[0.6495138241697039, 0.21876263934789777, 1.481978957085678, 0.08786837315307762], [0.2859585667160644, 1.3458356798528794, 0.6662558316367094, 0.11479198207639006], [0.41618787768519444, 0.43117004949276394, 1.7607879056409208, 0.12285556436504505], [1.284320181485161, 1.1812431933272103, 0.7580075154646249, 0.09599475196666497], [0.8205873359759475, 0.4463651413449246, 0.6360984744225078, 0.15044272402812647], [1.0103377713712978, 0.5404163268518037, 0.39192192194012065, 0.12286947027993035], [0.2874302572185677, 0.387713736982295, 1.7280566459521398, 0.10154255875096733], [0.16960071329163232, 0.7279737514970148, 0.4995729157685864, 0.17461405094393506], [0.6697523102959918, 0.7595690089156596, 0.8181129084289238, 0.14168772329883186], [0.7015643480827649, 0.3919445718477548, 0.23689722472961106, 0.08149408961196071], [0.6433570459787467, 0.7661306429720557, 0.45644980967502596, 0.10743418366643016], [0.12263969682673688, 0.40391622232751245, 1.591722927855828, 0.18005920657007712], [0.4950471309196899, 0.8766297837798237, 1.323780862807888, 0.11716010017297823], [0.6511106326296333, 0.5384118266912642, 0.8630509687137486, 0.10494382217201392], [0.5918020376629994, 0.8294115294066106, 1.0985265922141103, 0.16658640918737447]]];
+            let currAgent = "Sage";
+            let currAbilityRank = 2;
+
+            let updateAbilityData = () => {
+                let selectedAbilityArr = abilityCasts[currAbilityRank][Object.keys(agentColors).sort().indexOf(currAgent)]
+                document.getElementById("castsC").innerHTML = selectedAbilityArr[0].toFixed(2);
+                document.getElementById("castsQ").innerHTML = selectedAbilityArr[1].toFixed(2);
+                document.getElementById("castsE").innerHTML = selectedAbilityArr[2].toFixed(2);
+                document.getElementById("castsX").innerHTML = selectedAbilityArr[3].toFixed(2);
+
+                let maxAbilityArr = [...Array(noRanks).keys()].map((x) => {
+                    return abilityCasts[x][
+                        Object.keys(agentColors).sort().indexOf(currAgent)]
+                }).reduce((a, b) => {
+                    return a.map((x, idx) => (x < b[idx] ? b[idx] : x))
+                })
+
+                document.getElementById("barC").style.width = 100 * selectedAbilityArr[0] / maxAbilityArr[0] + "%";
+                document.getElementById("barQ").style.width = 100 * selectedAbilityArr[1] / maxAbilityArr[1] + "%";
+                document.getElementById("barE").style.width = 100 * selectedAbilityArr[2] / maxAbilityArr[2] + "%";
+                document.getElementById("barX").style.width = 100 * selectedAbilityArr[3] / maxAbilityArr[3] + "%";
+            }
+
+            makeSelector("agents", (elem) => {
+                currAgent = elem.innerHTML.replace(/\s+/g, '');
+                let coloredTexts = document.getElementsByClassName("agent-coloredtext");
+                let coloredBgs = document.getElementsByClassName("agent-coloredbg");
+                for (let el of coloredTexts) {
+                    el.style.color = agentColors[currAgent];
+                }
+                for (let el of coloredBgs) {
+                    el.style.backgroundColor = agentColors[currAgent];
+                }
+
+                document.getElementById("coverimage").setAttribute("src", "agent_pictures/" + currAgent + "_artwork.png")
+                document.getElementById("pickrate").setAttribute("src", "pickrates/" + currAgent + "pickrate.png")
+                document.getElementById("pickratePercent").innerHTML = (pickrates[currAgent] * 100).toFixed(0) + "%";
+                document.getElementById("agentname").innerHTML = currAgent;
+
+                document.getElementById("abilityC").setAttribute("src", "abilityimgs/" + currAgent + "c.png");
+                document.getElementById("abilityQ").setAttribute("src", "abilityimgs/" + currAgent + "q.png");
+                document.getElementById("abilityE").setAttribute("src", "abilityimgs/" + currAgent + "e.png");
+                document.getElementById("abilityX").setAttribute("src", "abilityimgs/" + currAgent + "x.png");
+
+                // best and worst agents
+                let winlist = agentpairings[currAgent];
+                for (let i = 0; i < 3; i++) {
+                    document.getElementById("besticon" + i).setAttribute("src", "agenticons/" + winlist[winlist.length - 1 - i].agent + "_icon.png")
+                    document.getElementById("best" + i).innerHTML = winlist[winlist.length - 1 - i].agent;
+                    document.getElementById("best" + i + "p").innerHTML = (winlist[winlist.length - 1 - i].winrate * 100).toFixed(1);
+
+                    document.getElementById("worsticon" + i).setAttribute("src", "agenticons/" + winlist[i].agent + "_icon.png")
+                    document.getElementById("worst" + i).innerHTML = winlist[i].agent;
+                    document.getElementById("worst" + i + "p").innerHTML = (winlist[i].winrate * 100).toFixed(1);
+                }
+
+                updateAbilityData();
+            })
+            makeSelector("abilityrank", (elem) => {
+                currAbilityRank = rankToIdx[elem.innerHTML.replace(/\s+/g, '')];
+                updateAbilityData();
+            })
+
+            let plantmap = "Ascent";
+            let plantsite = "A";
+            let plantrank = null;
+            let updatePlants = () => {
+                document.getElementById("siteimg").setAttribute("src", "sites/" + plantmap.toLowerCase() + plantsite.toLowerCase() + ".png")
+                document.getElementById("rateimg").setAttribute("src", "plantlocs/" + plantrank + "/" + plantmap + plantsite + "plants.png")
+            }
+            makeSelector("plantsite", (elem) => {
+                plantsite = elem.innerHTML.replace(/\s+/g, '')[0]
+                updatePlants();
+            })
+
+            let hasCSite = {
+                "Ascent": false,
+                "Bind": false,
+                "Breeze": false,
+                "Haven": true,
+                "Icebox": false,
+                "Split": false
+            }
+
+            makeSelector("mapplant", (elem) => {
+                plantmap = elem.innerHTML.replace(/\s+/g, '')
+                if (!hasCSite[plantmap]) {
+                    document.getElementById("Csite").classList.toggle("d-none", true)
+                    if (plantsite == "C") {
+                        document.getElementById("site0").click();
+                    }
+                }
+                else {
+                    document.getElementById("Csite").classList.toggle("d-none", false)
+                }
+                updatePlants();
+            })
+            makeSelector("plantrank", (elem) => {
+                if (elem === null) plantrank = "all";
+                else plantrank = elem.innerHTML.replace(/\s+/g, '').toLowerCase();
+                updatePlants();
+            }, true)
+            document.getElementById("agent0").click();
+            document.getElementById("rank0").click();
+            document.getElementById("plantrank0").click();
+            setTimeout(document.getElementById("plantrank0").click(), 100);
+            document.getElementById("site0").click();
+            document.getElementById("mappl0").click();
+        </script>
+    </div>
+</body>
+
+</html>

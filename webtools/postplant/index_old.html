@@ -1,0 +1,142 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h2>POST PLANT POSITIONING</h2>
+            <p>Use our AI to calculate how likely you are to win after planting.</p>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div id="valplanttoolcontainer">
+            <object type="image/svg+xml" data="ascent.svg" id="mapsvg"></object>
+            <div id="mouseCapture"></div>
+            <div class="controls">
+                <div class="control" id="zoomIn"><i class="material-icons">add</i></div>
+                <div class="control" id="zoomOut"><i class="material-icons">remove</i></div>
+                <div class="control attacker"><i class="material-icons">add_circle</i></div>
+                <div class="control defender"><i class="material-icons">add_circle</i></div>
+                <div class="control"><i class="material-icons">remove_circle_outline</i></div>
+            </div>
+        </div>
+    </div>
+    <script src="Vector2.js"></script>
+    <script>
+        let container = document.getElementById("valplanttoolcontainer")
+        let object = document.getElementById("mapsvg")
+        let svg;
+        object.addEventListener("load", () => {
+            svg = object.contentDocument.getElementsByTagName("svg")[0];
+            var pt = svg.createSVGPoint();
+
+            svg.addEventListener("mousedown", alert_click, false);
+
+            let maptransforms = [
+                [-308.714, -162.369],
+                [-976.813, -57.226],
+                [-664.016, -237.634],
+                [-1455.062, -479.346],
+                [-659.757, -963.028],
+                [-1079.325, -388.861]
+            ]
+            function fixForMap(point, mapidx) {
+                // first of all we need to flip the y
+                point.y = svg.getBBox().height - point.y
+                // map transform
+                point.x += maptransforms[mapidx][0]
+                point.y += maptransforms[mapidx][1]
+                // now we need to apply our mm transform
+                point.x *= 3.77953 * 10
+                point.y *= 3.77953 * 10
+                return point
+            }
+            function alert_click(evt) {
+                evt.preventDefault()
+                var cursorpt = fixForMap(cursorPoint(evt), 0);
+                console.log("(" + cursorpt.x + ", " + cursorpt.y + ")");
+            }
+
+            function cursorPoint(evt, element) {
+                pt.x = evt.clientX;
+                pt.y = evt.clientY;
+
+                return pt.matrixTransform(svg.getScreenCTM().inverse());
+            }
+
+            let map = document.getElementById("mouseCapture")
+            let mousePressed = false
+            let mouseCoords = new Vector2()
+
+            let svgPreoffset = new Vector2(0, 0)
+            let svgOffset = new Vector2(0, 0)
+            let centercoords = new Vector2(0, 0)
+
+            let zoom = 1;
+
+            let updateSVGPos = () => {
+                
+
+                svg.style.marginTop = svgOffset.y;
+                svg.style.marginLeft = svgOffset.x;
+                centercoords.x = ((container.offsetWidth / 2) - svgOffset.x) / zoom  /// zoom;
+                centercoords.y = ((container.offsetHeight / 2) - svgOffset.y) / zoom /// zoom;
+                console.log(centercoords)
+            }
+
+            let mapclick = (e) => {
+                //e.preventDefault()
+                mousePressed = true;
+                mouseCoords.x = e.clientX;
+                mouseCoords.y = e.clientY;
+                svgPreoffset = svgOffset.clone()
+            }
+            let mapunclick = (e) => {
+                //e.preventDefault()
+                mousePressed = false
+            }
+            let mapmove = (e) => {
+                if (mousePressed) {
+                    e.preventDefault()
+                    let evec = new Vector2(e.clientX, e.clientY);
+
+                    svgOffset.addVectors(svgPreoffset, (new Vector2()).subVectors(evec, mouseCoords))
+                    updateSVGPos();
+                }
+            }
+            map.addEventListener("mousedown", mapclick)
+            map.addEventListener("mousemove", mapmove)
+            map.addEventListener("mouseup", mapunclick)
+
+            let updateZoom = () => {
+                svg.style.transformOrigin = "0 0"
+                svg.style.transform = "scale(" + zoom + ")"
+            }
+            let updatePosNewZoom = () => {
+                svgOffset.x = ((container.offsetWidth / 2) - (centercoords.x * zoom))
+                svgOffset.y = ((container.offsetHeight / 2) - (centercoords.y * zoom))
+                updateSVGPos();
+            }
+            //updateZoom();
+            document.getElementById("zoomIn").addEventListener("click", () => {
+                zoom += 0.15;
+                // we need to preserve centercoords calculations
+                updateZoom();
+                updatePosNewZoom();
+            })
+            document.getElementById("zoomOut").addEventListener("click", () => {
+                zoom -= 0.15;
+                updatePosNewZoom();
+                updateZoom();
+            })
+        })
+    </script>
+</body>
+
+</html>

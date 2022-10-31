@@ -1,0 +1,173 @@
+.valorantanalysis {
+    background-color: #0F1822;
+    color: white;
+}
+
+.valorantanalysis h1, h2 {
+    font-weight: 900;
+    color: #FF4654;
+}
+
+.valorantanalysis #valplanttoolcontainer {
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.valorantanalysis .controls {
+    position: absolute;
+    padding: 5px;
+    border: 1px solid skyblue;
+    top: 0;
+    right: 0;
+    background-color: darkslategray;
+}
+
+.valorantanalysis .selected-info {
+    position: absolute;
+    padding: 5px;
+    border: 1px solid skyblue;
+    bottom: 0;
+    right: 0;
+    background-color: darkslategray;
+    color: gainsboro;
+}
+
+.valorantanalysis .control {
+    padding: 2px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.valorantanalysis .attacker {
+    color: #B74F4E;
+}
+
+.valorantanalysis .attacker-bg {
+    background-color: #B74F4E;
+}
+.valorantanalysis .attacker-bg.selected {
+    border: 3px solid #ff6d6d;
+}
+
+.valorantanalysis .defender {
+    color: #55B09C
+}
+
+.valorantanalysis .defender-bg {
+    background-color: #55B09C
+}
+.valorantanalysis .defender-bg.selected {
+    border: 3px solid #77ffe2;
+}
+
+.valorantanalysis .spike {
+    color: #FBE648
+}
+
+.valorantanalysis .spike-bg {
+    background-color: #FBE648
+}
+.valorantanalysis .player.spike-bg::after {
+    display: block;
+    content: " ";
+    width: 50%;
+    height: 50%;
+    background-color: #B74F4E;
+    border-radius: 50%;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.valorantanalysis .spike-bg.selected {
+    border: 1.5px solid gainsboro;
+}
+
+.valorantanalysis #players {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.valorantanalysis .player {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.valorantanalysis #mouseCapture {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.valorantanalysis .winningbarbg {
+    height: 15px;
+}
+
+.valorantanalysis #winningbar {
+    height: 100%;
+    transition: 0.2s;
+}
+
+.valorantanalysis .prob {
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: -20px;
+}
+
+.valorantanalysis .label-txt {
+    margin-bottom: 5px;
+}
+
+.valorantanalysis .selector-box {
+    padding: 15px;
+    background-color: gainsboro;
+    opacity: 0.5;
+    text-align: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.valorantanalysis .selector-box.slim {
+    padding: 5px;
+}
+
+.valorantanalysis .selector-box.selected {
+    opacity: 1;
+    font-weight: 700;
+}
+
+.valorantanalysis #pickratePercent {
+    font-weight: 800;
+    font-size: 60px;
+    margin: 0;
+}
+
+.valorantanalysis .barcontainer {
+    height: 25px;
+    padding: 0px;
+    background-color: gray;
+}
+
+.valorantanalysis .bar {
+    height: 100%;
+    transition: 0.2s;
+}
+
+.valorantanalysis #rateimg {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
